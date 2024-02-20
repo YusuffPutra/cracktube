@@ -1,0 +1,16 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="search-container">
+    <input [(ngModel)]="searchTerm" class="search-input" placeholder="Enter query">
+    <button (click)="search()" class="search-button"><i class="fa fa-search"></i></button>
+</div>
+  
+<div *ngIf="videos">
+    <div *ngFor="let video of videos; let i = index">
+      <div class="video-container" *ngIf="i % 3 === 0">
+        <div *ngFor="let video of videos.slice(i, i + 3); let j = index" class="video-item">
+          <iframe width="480" height="250" [src]="video.safeUrl" frameborder="0" allowfullscreen></iframe>
+          <p class="video-title" [innerHTML]="video.snippet.title"></p>
+        </div>
+      </div>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+.search-container {
+    display: flex;
+    margin: 15px 0;
+    align-items: center;
+    justify-content: center;
+}
+.search-input {
+    padding: 10px;
+}
+.search-button {
+    color: white;
+    background-color: rgb(124, 4, 179);
+    padding: 10px;
+    margin: 0 0 0 5px;
+}
+.video-container {
+    display: flex;
+    margin: 20px 50px;
+    justify-content: space-between;
+}
+.video-item {
+    flex: 0 85%;
+    overflow: hidden;
+    box-sizing: border-box;
+    text-align: center;
+}
+.video-title {
+    margin: 5px 0 0 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

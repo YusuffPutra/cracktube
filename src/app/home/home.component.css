@@ -1,0 +1,23 @@
+.introduction {
+    margin: 20px auto;
+    text-align: center;
+} 
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.video {
+    flex: 0 30%;
+    box-sizing: border-box;
+    text-align: center;
+    overflow: hidden;
+}
+.title {
+    margin-top: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}  

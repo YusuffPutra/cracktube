@@ -1,0 +1,14 @@
+.container {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+h2, h4 {
+    color: #007BFF;
+}
+address {
+    margin-top: 10px;
+}
+.introduction, .explanation, .contact {
+    margin-bottom: 40px;
+}

@@ -1,0 +1,14 @@
+<div class="introduction">
+    <h3>Popular Now</h3>
+</div>
+
+<div *ngIf="popularVideos">
+      <div *ngFor="let video of popularVideos; let i = index">
+        <div class="container" *ngIf="i % 3 === 0">
+          <div *ngFor="let video of popularVideos.slice(i, i + 3)" class="video">
+            <iframe width="480" height="250" [src]="video.safeUrl" frameborder="0" allowfullscreen></iframe>
+            <p class="title" [innerHTML]="video.snippet.title"></p>
+          </div>
+        </div>
+      </div>
+</div>
